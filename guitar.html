@@ -1,0 +1,27 @@
+<div>
+    <h1>Hello</h1>
+    <center>
+        <div class="myimg">
+            <img class="myimg" ng-src="{{current.image_path}}" />
+            <br/>
+            <input type="button" name="" value="Previous" class="buybtn btn btn-outline-primary" ng-click='previous()' ng-disabled="counter == 0" />
+            <input type="button" name="" value="Next" class="buybtn" style="margin-left: 150px;" ng-click="next()" ng-disabled="counter == 6" />
+        </div>
+        <div class="buy">
+            <details>
+                <summary>Product Information</summary>
+                <p>{{current.product_description}}</p>
+            </details>
+            <details>
+                <summary>Shopping Information</summary>
+                <p>{{current.shipping_details}}</p>
+            </details>
+            <details>
+                <summary>Customer Reviews</summary>
+                <p>{{current.customer_reviews}}</p>
+            </details>
+            <br/>
+            <a ng-href="#/order" class="buybt">Buy</a>
+        </div>
+    </center>
+</div>

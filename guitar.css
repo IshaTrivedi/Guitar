@@ -1,0 +1,121 @@
+body {
+    background-color: #F7E6F4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #939693;
+    width: 100%;
+}
+
+li {
+    float: left;
+    text-align: center;
+    margin-left: 80px;
+}
+
+li a,
+.dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #333633;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333633;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: black
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    margin-top: -7px;
+    font-size: 70px;
+    font-family: arial;
+    /*color: #948791;*/
+    color: black;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.myimg {
+    width: 400px;
+    height: 220px;
+    /*border: 2px solid black;*/
+    margin-top: -20px;
+}
+
+.buy {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 30px;
+    margin-left: 600px;
+    color: #DE2A51;
+    /*border: 1px solid black;*/
+}
+
+.buybt {
+    border: 1px solid #DE2A51;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.showinfo {
+    border: 1px solid #DE2A51;
+    background-color: #F7E6F4;
+    width: 180px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 22px;
+}
+
+.orderimg {
+    float: left;
+}
